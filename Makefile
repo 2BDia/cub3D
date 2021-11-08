@@ -10,8 +10,10 @@ CFLAGS		=	-Wall -Wextra -Werror -I$(INCLUDE)
 RM			=	rm -f
 
 SRCS		=	main.c 			\
+				free.c			\
 				modgnl_utils.c	\
 				modgnl.c		\
+				parsing.c		\
 				read_file.c		\
 
 OBJS		=	$(SRCS:%.c=%.o)
