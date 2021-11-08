@@ -29,4 +29,8 @@ char	*ft_modstrjoin(char const *s1, char const *s2);
 char	**read_file(char *argv);
 int		check_cub(char *str);
 
+int		free_all(t_map *map);
+
+int		parsing(char *argv, t_map *map);
+
 #endif
