@@ -22,13 +22,13 @@ int	main(int argc, char **argv)
 	init_t_map(map);
 	if (parsing(argv[1], map))
 	{
-		system("leaks cub3d");
-		return (free_all(map));
+		//system("leaks cub3d");
+		return (1 || free_all(map));
 	}
-	// i = 0;
+	i = 0;
 	// while (map->raw_file[i])
 	// {
-	// 	printf("map[%d]=%s\n", i, map->raw_file[i]);
+	// 	printf("file[%d]=|%s|\n", i, map->raw_file[i]);
 	// 	i++;
 	// }
 	// printf("n_texture=%s\n", map->n_texture);
@@ -40,13 +40,13 @@ int	main(int argc, char **argv)
 	// i = 0;
 	// while (map->map_f[i])
 	// {
-	// 	printf("map_f[%d]=%s\n", i, map->map_f[i]);
+	// 	printf("map_f[%d]=|%s|\n", i, map->map_f[i]);
 	// 	i++;
 	// }
 	// printf("p_pos_x=%d\n", map->p_pos_x);
 	// printf("p_pos_y=%d\n", map->p_pos_y);
 	// printf("p_ori=%c\n", map->p_ori);
-	free_all(map);
-	system("leaks cub3d");
+	//free_all(map);
+	//system("leaks cub3d");
 	return (0);
 }
