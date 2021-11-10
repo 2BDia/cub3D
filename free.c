@@ -1,17 +1,17 @@
 #include "cub3d.h"
 
-int	free_all(t_map *map)
+int	free_all(t_file *file)
 {
 	int	i;
 
 	i = 0;
-	while (map->raw_file[i])
-		free(map->raw_file[i++]);
-	free(map->raw_file);
+	while (file->raw_file[i])
+		free(file->raw_file[i++]);
+	free(file->raw_file);
 	i = 0;
-	while (map->map_f[i])
-		free(map->map_f[i++]);
-	free(map->map_f);
-	free(map);
+	while (file->map[i])
+		free(file->map[i++]);
+	free(file->map);
+	free(file);
 	return (1);
 }
